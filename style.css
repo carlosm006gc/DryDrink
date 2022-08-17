@@ -5,6 +5,7 @@
 *{
     width: 100%;
     height: 100%;
+
 }
 
 body, html{
@@ -20,7 +21,7 @@ header {
     padding: 0px 0px 0px 40px;
     min-width: 320px;
     max-width: 1366px;
-    height: 155px;
+    height: auto;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -49,14 +50,11 @@ ul{
     display: flex;
     
 }
-#logo img{
-    height: 155px;
-    width: 190px;
-}
+
 #logo{
     margin: 0px 70px 0px 0px;
     display: flex;
-    width: 187px;
+    width: 200px;
     height: 155px;
 
 }
