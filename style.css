@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');*{
     height: 100%;
     width: 100%;
@@ -20,7 +21,6 @@ header {
     background-color: #18191C;
     padding: 0px 0px 0px 40px;
     min-width: 320px;
-    max-width: 1366px;
     height: auto;
     overflow: hidden;
     position: fixed;
@@ -56,6 +56,7 @@ ul{
     display: flex;
     width: 200px;
     height: 155px;
+    
 
 }
 .imgsocial{
@@ -99,7 +100,6 @@ a{
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
     font-weight: 600;
-    text-decoration: solid;
     
 }
 ul li a:hover{
@@ -132,6 +132,7 @@ input {
     width: 200%;
     height: 100%;
     
+    
 }
 .slider-s1 img{
     height: 606px;
@@ -140,10 +141,12 @@ input {
     width: 20%;
     height: 606px;
     width: 100%;
+
 }
 .slider img{
     height: 606px;
     width: 50%;
+
 }
 #slide1:checked ~ .slider-s1{
     margin-left: 0;
