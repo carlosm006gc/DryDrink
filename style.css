@@ -3,11 +3,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-  }
-.logo{
-display: flex;
-
-}
+  } 
 header{
   height: 150px;
     width: 100%;
@@ -59,9 +55,8 @@ header{
  .box{
     width: 30%;
     height: 100%;
-    overflow: hidden;
     display: flex;
-    margin: 0px 0px 0px 30%; 
+    padding-left: 30px;
  }
  .box .icon{
     right: 20%;
@@ -84,39 +79,30 @@ ul li a:hover{
     transition: all 0.5s ease;
     text-decoration: underline #FF6B1A;
 }
-.div-busca{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  background-color: black;
-  height: 40px;
-  border-radius: 40px;
-  padding: 10px;
-  justify-content: space-between;
-  align-items: center;
-}
-.button-busca{
-  color: black;
-  float: right;
-  width: 40px;
-  border-radius: 50%;
-  background: black;
+#divBusca{
+  background-color:transparent;
+  border:solid 3px;
+  border-color: #ffffff;
+  border-radius:15px;
+  width:100px;
   display: flex;
-  
-}
-.txtbusca{
-  border: none;
-  background: none;
-  outline: none;
-  float: left;
-  padding: 0px;
-  color: palevioletred;
-  transition: 0.4s;
-  line-height: 40px;
-  width: 0px;
+  margin: 20px;
 }
 
+#txtBusca{
+  background-color:transparent;
+  padding-left:5px;
+  font-size:18px;
+  border:none 5px;
+  border-radius: 15px;
+  height:30px;
+  width:94px;
+}
+#divBusca img{
+  margin: 5px;
+  align-items: center;
+  width: 25px;
+}
   .burger {
     display: none;
     cursor: pointer;
@@ -158,13 +144,13 @@ ul li a:hover{
       position: fixed;
       right: 0px;
       height: 92vh;
-      top: 11vh;
-      background-color: #18191C;
+      top: 16vh;
+      background-color: #111111;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 50%;
+      width: 100%;
       transform: translateX(100%);
     }
     
@@ -211,6 +197,8 @@ ul li a:hover{
 
     .burger {
       display: block;
+      position: absolute;
+      right: 5vw;
     }
    
   }
@@ -271,7 +259,6 @@ ul li a:hover{
   .nav-slider {
     display: flex;
     align-items: center;
-    background-color: #ca5309;
     font-family: 'oswald', sans-serif;
     position: relative;
     height: 100%;
@@ -342,7 +329,7 @@ label:hover{
     top: 18vh;
 }
   .slider img{
-    height: 70vh;
+    height: 82vh;
     width: 100%;
     object-fit: cover;
   }
@@ -362,7 +349,7 @@ label:hover{
     height: 100%;
     width: 100%;
     position: absolute;
-    top: 11vh;
+    top: 23vh;
 }
   .slider img{
     height: 50vh;
@@ -383,7 +370,7 @@ label:hover{
     height: 100%;
     width: 100%;
     position: absolute;
-    top: 11vh;
+    top: 24vh;
 }
   .slider img{
     height: 30vh;
@@ -399,7 +386,7 @@ label:hover{
 body{
   background: rgb(102,36,0);
   background: linear-gradient(0deg, rgba(102,36,0,1) 0%, rgba(179,63,0,1) 57%, rgba(255,107,26,1) 100%);}
-.cardapio-nav{
+.cardapio-nav1{
   position: relative;
   display: flex;
   height: 50vh;
@@ -407,7 +394,15 @@ body{
   margin: 35vh 20vh 0vh 20vh;
   border-radius: 10px;
 }
-.cardapio-nav1{
+.cardapio-nav2{
+  position: relative;
+  display: flex;
+  height: 50vh;
+  overflow: hidden;
+  margin: 35vh 20vh 0vh 20vh;
+  border-radius: 10px;
+}
+.cardapio-nav3{
   position: relative;
   display: flex;
   height: 50vh;
@@ -504,11 +499,15 @@ footer{
   cursor: default;
 }
 @media screen and (max-width: 850px){
-  .cardapio-nav{
+  .cardapio-nav1{
     height: 45vh;
     margin: 5vh 10vh 10vh 10vh;
   }
-  .cardapio-nav1{
+  .cardapio-nav2{
+    height: 45vh;
+    margin: 5vh 10vh 10vh 10vh;
+  }
+  .cardapio-nav3{
     height: 45vh;
     margin: 5vh 10vh 10vh 10vh;
   }
@@ -531,11 +530,15 @@ footer{
   
 }
 @media screen and (max-width: 700px){
-  .cardapio-nav{
-    height: 35vh;
-    margin: 0vh 10vh 10vh 10vh;
-  }
   .cardapio-nav1{
+    height: 35vh;
+    margin: 10vh 10vh 10vh 10vh;
+  }
+  .cardapio-nav2{
+    height: 35vh;
+    margin: 10vh 10vh 10vh 10vh;
+  }
+  .cardapio-nav3{
     height: 35vh;
     margin: 0vh 10vh 10vh 10vh;
   }
@@ -588,11 +591,15 @@ footer{
     }
   }
 @media screen and (max-width: 375px){
-  .cardapio-nav{
-    height: 25vh;
-    margin: 0vh 5vh 5vh 5vh;
-  }
   .cardapio-nav1{
+    height: 25vh;
+    margin: 15vh 5vh 5vh 5vh;
+  }
+  .cardapio-nav2{
+    height: 25vh;
+    margin: 5vh 5vh 5vh 5vh;
+  }
+  .cardapio-nav3{
     height: 25vh;
     margin: 0vh 5vh 5vh 5vh;
   }
