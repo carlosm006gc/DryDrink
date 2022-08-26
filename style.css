@@ -115,21 +115,7 @@ ul li a:hover{
     margin: 5px;
     transition: all 0.3s ease;
   }
-   
-
-  @media screen and (max-width:1224px) {
-    .nav-links {
-      width: 80%;
-    }
-    .box {
-        width: 30%;
-        height: 100%;
-        overflow: hidden;
-        display: flex;
-        margin: 0px 0px 0px 0%;
-    }
-    
-  }
+  
   @media screen and (max-width:850px) {
     body {
       overflow-x: hidden;
