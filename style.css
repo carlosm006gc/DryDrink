@@ -625,43 +625,50 @@ footer{
   color: #ffffff;
   font-family: 'Oswald', sans-serif;
   background-color: #B33F00;
+  padding-top: 150px;
 }
 .div-principal{
   position: relative;
-  padding-top: 150px;
 }
 .div-principal img{
   object-fit: cover;
   object-position: bottom;
   width: 100%;
-  position: relative;
   display: block;
+  position: relative;
 }
 .titulo{
   font-size: 50px;
-  display: flex;
   z-index: 10;
+  cursor: default;
   position: absolute;
-  right: 25%;
-  top: 60%;
-  align-items: center;
-  cursor: default;  
+  top: 45%;
+  left: 20%;
+  right: 15%;
+  bottom: 45%;
+  
 }
 .div-sobre{
   display: flex;
   font-size: 20px;
-  padding: 5%;
+  padding: 5vh;
   background-color: #111111;
+  
 }
 .nav-sobre{
   display: inline-block;
   position: relative;
   background-color: transparent;
-  height: 750px;
-
+  color: #ffffff;
 }
 .img-sobre{
+  overflow: hidden;
   float: left;
+  object-fit: cover;
+  height: 100vh;
+}
+.img-sobre img{
+  height: 100%;
 }
 .div-sobre2{
   overflow: hidden;
@@ -682,6 +689,9 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
+  align-items: stretch;
+  padding-left: 44%;
+  padding-right: 30%;
 }
 .h2-etico{
   overflow: hidden;
@@ -689,10 +699,112 @@ footer{
   align-items: center;
   position: relative;
   display: flex;
-  padding-top: 15%;
+  padding-top: 20vh;
+  text-align: justify;
 }
 .p1-etico{
   align-items: center;
   padding: 0px 20%;
+  text-align: justify;
 }
+@media screen and (max-width: 1050px){
+  .titulo{
+    font-size: 35px;
+    left: 25%;
+    right: 15%;
+  }
+  
+  
+}
+@media screen and (max-width: 850px){
+  .titulo{
+    font-size: 35px;
+    left: 20%;
+    right: 15%;
+  }
+  .div-ul{
+    padding-left: 30%;
+    padding-right: 15%;
+  }
+  
+}
+@media screen and (max-width: 750px){
+  .titulo{
+    font-size: 25px;
+    left: 20%;
+    right: 15%;
+  }
+  
+  .img-sobre{
+    width: 50%;
+  }
+  .h2-etico{
+    padding-top: 2vh;
+  }
+}
+@media screen and (max-width: 550px){
+  .titulo{
+    font-size: 25px;
+    left: 15%;
+    right: 10%;
+  }
+  
+  
+  .img-sobre{
+    width: 40%;
+    height: 80vh;
+  }
+  .h2-etico{
+    padding-top: 5vh;
+  }
+}
+  @media screen and (max-width: 450px){
+    .titulo{
+      font-size: 15px;
+      left: 25%;
+      right: 19%;
+    }
+    .img-sobre{
+      width: 35%;
+      height: 20vh;
+    }
 
+    .div-sobre{
+      font-size: 12px;
+      text-align: justify;
+    }
+    .nav-sobre{
+      font-size: 12px;
+      align-items: stretch;
+    }
+    .img-sobre{
+      height: 60vh;
+      width: 50vw;
+    }
+    .h2-etico{
+      padding-top: 2vh;
+    }
+}
+@media screen and (max-width: 375px){
+  .titulo{
+    font-size: 15px;
+    left: 20%;
+    right: 10%;
+  }
+  
+  .div-sobre{
+    font-size: 10px;
+    text-align: justify;
+  }
+  .nav-sobre{
+    font-size: 10px;
+    align-items: stretch;
+  }
+  .img-sobre{
+    height: 60vh;
+    width: 50vw;
+  }
+  .h2-etico{
+    padding-top: 2vh;
+  }
+}
