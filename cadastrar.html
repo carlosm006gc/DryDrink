@@ -66,15 +66,23 @@
   </nav>
 </header>
   <div id="login">   
-    <h1 id="h1-login">Entrar</h1>
-    <form method="post">
-      <h4>Usuário*</h4>
-      <input type="email" name="email">
+    <h1 id="h1-login">Cadastrar</h1>
+    <form method="post" action="processa.java">
+      <h4>Nome*</h4>      
+      <input type="text" name="nome" maxlength="30">
+      <h4>Telefone*</h4>
+      <input type="text" name="telefone" maxlength="30">
+      <h4>Email*</h4>
+      <input type="email" name="email" maxlength="40">
+      <h4>Cidade</h4>
+      <input type="text" name="cidade" maxlength="30">
       <h4>Senha*</h4>
-      <input type="password" name="senha">
+      <input type="password" name="senha" maxlength="15">
+      <h4>Confirmar senha*</h4>
+      <input type="password" name="confSenha" maxlength="15">
       <input type="submit" value="Entrar">
     </form>
-    <a id="a-login" href="cadastrar.html">Ainda não é inscrito? Cadastre-se!</a>
+    <a id="a-login" href="login.html">Ja possui cadastro? Faça seu login! </a>
   </div>
 <script src="func.js"></script>
 </body>
