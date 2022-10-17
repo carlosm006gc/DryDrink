@@ -7,7 +7,7 @@
 <title>Dry Drink</title>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>    
@@ -21,7 +21,7 @@
           <li>
             <div id="divBusca">
               <input type="text" id="txtBusca" placeholder="pesquisar"/>
-              <img src="lupa.svg" id="btnBusca" alt="Buscar"/>
+              <img src="imgs/lupa.svg" id="btnBusca" alt="Buscar"/>
             
           </li>
           <ul class="box">
@@ -29,7 +29,7 @@
               <a class="link" href="">
                 <ion-icon name="cart-outline"></ion-icon>          </a>
               </li>
-              <li class="icon login"> 
+              <li class="icon loginn"> 
                 <a class="link" href="">
                   <ion-icon name="log-out-outline"></ion-icon>
               </a></li>    
@@ -65,17 +65,15 @@
     </div>
   </nav>
 </header>
-  <div id="login">   
-    <h1 id="h1-login">Entrar</h1>
+  <div class="login">   
+    <h1 class="h1-login">Entrar</h1>
     <form method="post">
-      <h4>Usuário*</h4>
-      <input type="email" name="email">
-      <h4>Senha*</h4>
-      <input type="password" name="senha">
-      <input type="submit" value="Entrar">
+      <label class="label-cd">Email<input type="email" name="email" maxlength="40"></label>
+      <label class="label-cd">Senha<input type="password" name="senha" maxlength="15"></label>
+      <button id="btnCadastrar" type="submit">Entrar</button>    </form>
     </form>
     <a id="a-login" href="cadastrar.html">Ainda não é inscrito? Cadastre-se!</a>
   </div>
-<script src="func.js"></script>
+<script src="js/func.js"></script>
 </body>
 </html>

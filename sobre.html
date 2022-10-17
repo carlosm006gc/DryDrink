@@ -7,34 +7,37 @@
 <title>Dry Drink</title>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-      
-    
+    <header>    
     <ul class="nav-links">
         <li><a href=""></a></li>
         <li><a href="index.html">HOME</a></li>
         <li><a href="distribuidoras.html">DISTRIBUIDORAS</a></li>
-        <li><a href="sobre.html">SOBRE</a></li>
+        <li><a href="sobre.html">SOBRE</a>
+          <ul>
+            <li><a href="#">Visão</a></li>
+            <li><a href="#">Valores</a></li>
+            
+          </ul></li>
         <li><a href=""></a></li>
         
-        <li class="icon carrinho">
-          <a class="link" href="">
-            <ion-icon name="cart-outline"></ion-icon>          </a>
-          </li>
-          <li class="icon login"> 
-            <a class="link" href="">
-              <ion-icon name="log-out-outline"></ion-icon>
-          </a></li>
           <li>
             <div id="divBusca">
               <input type="text" id="txtBusca" placeholder="pesquisar"/>
-              <img src="lupa.svg" id="btnBusca" alt="Buscar"/>
+              <img src="imgs/lupa.svg" id="btnBusca" alt="Buscar"/>
             
           </li>
           <ul class="box">
+            <li class="icon carrinho">
+              <a class="link" href="">
+                <ion-icon name="cart-outline"></ion-icon>          </a>
+              </li>
+              <li class="icon loginn"> 
+                <a class="link" href="">
+                  <ion-icon name="log-out-outline"></ion-icon>
+              </a></li>    
           <li class="icon instagram">
           <a class="link" href="">
             <ion-icon name="logo-instagram"></ion-icon>
@@ -59,12 +62,13 @@
         <li></li>
         
     </ul>
-
+    
     <div class="burger">
       <div class="line1"></div>
       <div class="line2"></div>
       <div class="line3"></div>
     </div>
+  </nav>
 </header>
 <main id="main-sobre"> 
 <div class="div-principal">
@@ -99,6 +103,6 @@
   <nav class="footer-nav">
 <h2>WebSite por CarlosMagno</h2>
 </footer>
-<script src="func.js"></script>
+<script src="js/func.js"></script>
 </body>
 </html>

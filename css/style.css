@@ -7,14 +7,23 @@
 header{
     height: 150px;
     width: 100%;
-    overflow: hidden;
     position: fixed;
     z-index: 1000;
     background-color: #111111;
     align-items: center;
     font-family: 'oswald', sans-serif;
     top: 0;
-
+    display: inline;
+}
+  header ul ul{
+  background-color: #111111;
+  border-radius: 10px;
+  top: 90px;
+  position: absolute;
+  visibility: hidden;
+}
+  header ul li:hover ul{
+  visibility: visible;
 }
   
   .links{
@@ -54,6 +63,7 @@ header{
     height: 100%;
     display: flex;
     padding-left: 30px;
+    margin: auto;
  }
  .box .icon{
     
@@ -114,6 +124,9 @@ ul li a:hover{
   
   @media screen and (max-width:850px) {
     
+    header ul li:hover ul{
+      visibility: hidden;
+    }
     .nav-links li {
         padding: 10px 0px;
       } 
@@ -819,24 +832,48 @@ footer{
   }
 }
 
-
-#login{
+/*cadastro usuario*/
+#section-cad{
   position: relative;
-  top: 150px;
-  margin: 30vh auto 0px auto;
-  border-radius: 10px;
-  width: 80%;
   height: 100vh;
+  margin-top: 150px;
+}
+#div-control-cad{
+  display: flex;
+  height: 100%;
+}
+.img-cadastro {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 35%;
+}
+.img-cadastro img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.login-cad {
+  position: relative;
+  margin:0px auto;
+  width: 40%;
+  height: 100%;
   color: white;
   font-family: 'oswald', sans-serif;
-
+  overflow: hidden;
 }
-h4{
-  position: relative;
-  left: 26vw;
-  font-size: larger;
+.h1-login{
+  text-align: center;
+  cursor: default;
+  margin-top: 50px;
 }
-input{
+#form-cad{
+  margin: auto;
+  width: 400px;
+  
+}
+.input-cad{
   height: 55px;
   width: 400px;
   margin: 10px auto;
@@ -846,10 +883,23 @@ input{
   font-size: 16px;
   padding: 10px 20px;
 }
-#h1-login{
-  text-align: center;
-  cursor: default;
-  
+.label-cd{
+  position: relative;
+  font-size: larger;
+}
+.label-cd:hover{
+  background-color: transparent;
+}
+#btnCadastrar{
+  cursor: pointer;
+  height: 55px;
+  width: 400px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 30px;
+  border: 0px solid #111111;
+  font-size: 16px;
+  padding: 10px 20px;
 }
 #a-login{
   text-align: center;
@@ -862,3 +912,385 @@ input{
   text-decoration: underline ;
   transition: all 0.5s ease-in;
 }
+@media screen and (max-width: 950px){
+  #section-cad{
+    margin-top: 100px;
+  }
+  .img-cadastro {
+    position: relative;
+    overflow: hidden;
+    width: 45%;
+  }
+  .login-cad{
+    width: 50%;
+  }
+
+  .h1-login{
+    text-align: center;
+    cursor: default;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  #form-cad{
+    margin: auto;
+    width: 200px;
+  }
+  .input-cad{
+    height: 50px;
+    width: 200px;
+    font-size: 16px;
+    padding: 10px 5px;
+  }
+  .label-cd{
+    position: relative;
+    font-size: medium;
+  }
+  #btnCadastrar{
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    font-size: medium;
+    padding: 0px;
+  }
+  #a-login{
+    font-size: medium;
+  }
+}
+@media screen and (max-width: 450px){
+  
+  .img-cadastro {
+    position: relative;
+    width: 45%;
+  }
+  .img-cadastro img{
+    height: 100%;
+  }
+  .h1-login{
+    text-align: center;
+    cursor: default;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: medium;
+  }
+  #form-cad{
+    margin: auto;
+    width: 100px;
+  }
+  .input-cad{
+    height: 20px;
+    width: 100px;
+    font-size: 10px;
+    padding: 10px 5px;
+  }
+  .label-cd{
+    position: relative;
+    font-size: smaller;
+  }
+  #btnCadastrar{
+    cursor: pointer;
+    height: 20px;
+    width: 100px;
+    font-size: smaller;
+    padding: 0px;
+  }
+  #a-login{
+    font-size: small;
+  }
+}
+@media screen and (max-width: 375px){
+ 
+  .img-cadastro {
+    position: relative;
+    overflow: hidden;
+    width: 45%;
+  }
+  .h1-login{
+    text-align: center;
+    cursor: default;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: medium;
+  }
+  #form-cad{
+    margin: auto;
+    width: 100px;
+  }
+  .input-cad{
+    height: 20px;
+    width: 100px;
+    font-size: 10px;
+    padding: 10px 5px;
+  }
+  .label-cd{
+    position: relative;
+    font-size: smaller;
+  }
+  #btnCadastrar{
+    cursor: pointer;
+    height: 20px;
+    width: 100px;
+    font-size: smaller;
+    padding: 0px;
+  }
+  #a-login{
+    font-size: small;
+  }    
+}
+/*cadastro usuario*/
+
+
+
+/*lista*/
+#section-list{
+  height: 100vh;
+  position: relative;
+  margin-top: 150px;
+}
+#nav-list{
+  position: relative;
+  height: 100px;
+  color: white;
+  font-family: 'oswald', sans-serif;
+  overflow: hidden;
+}
+#div-control-list{
+  display: flex;
+}
+#tr-table-list{
+  background-color: #ffffff;
+  font-family: 'oswald', sans-serif;
+}
+#tr-thead-list{
+  color: #B33F00;
+}
+.th-list-func th{
+  height: 100px;
+  width: 230px;
+}
+.icon-lista a{
+  font-size: 25px;
+  margin: 5px;
+  cursor: pointer;
+}
+.editar:hover{
+  color: rgb(59, 68, 196);
+  text-align: center;
+  border-radius: 10px;
+}
+.excluir:hover{
+  color: rgb(221, 74, 48);
+  text-align: center;
+  border-radius: 10px;
+  
+}
+@media screen and (max-width: 950px){
+  #section-list{
+    margin-top: 100px;
+  }
+}
+/*lista*/
+
+.list-f-ul{
+  display: inline;
+  float: right;
+}
+#span-cad-list{
+  color: #ffffff;
+}
+#div-cad-list{
+  height: 100%;
+  position: relative;
+  margin: 36px;
+}
+#div-cad-list a{
+  text-decoration: solid;
+}
+.botton-span-list{
+  background-color: white;
+  border: none;
+  font-family: 'oswald', sans-serif;
+  font-size: 16px;
+  height: 40px;
+  width: 60px;
+  border-radius: 10px;
+  color:#B33F00;
+  cursor: pointer;
+}
+.form-control{
+  height: 55px;
+  width: 400px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 30px;
+  border: 0px solid #111111;
+  font-size: 16px;
+  padding: 10px 20px; 
+}
+
+
+.th-list-func td{
+  height: 100px;
+  width: 200px;
+  text-align: center;
+}
+.td-list-func a{
+  height: 100px;
+  width: 200px;
+  text-align: center;
+}
+
+/*cadastro funcionarios*/
+#div-control{
+  margin-top: 150px;
+  color: #ffffff;
+  font-family: 'oswald', sans-serif;
+}
+.h1-login-func{
+  text-align: center;
+  cursor: default;
+  margin-bottom: 50px;
+  margin-top: 160px;
+  font-size: 2em;
+}
+#login-func {
+  position: relative;
+  border-radius: 10px;
+  height: 130vh;
+  color: white;
+  font-family: 'oswald', sans-serif;
+  overflow: hidden;
+}
+#btnCadastrar-func{
+  margin-top: 50px;
+  cursor: pointer;
+  height: 55px;
+  width: 400px;
+  display: block;
+  border-radius: 30px;
+  border: 0px solid #111111;
+  font-size: 16px;
+  font-family: 'oswald', sans-serif;
+  padding: 10px 20px;
+}
+.label-cd-func{
+  position: relative;
+  margin: auto;
+  font-size: larger;
+}
+.label-cd-func:hover{
+  background-color: transparent;
+}
+.cadastro-func{
+  margin: 0px auto;
+}
+.cadastro-func2{
+  margin: 0px auto;
+}
+#form-func{
+  position: relative;
+  display: flex;
+  margin: auto;
+}
+.input-func{
+  height: 55px;
+  width: 400px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 30px;
+  border: 0px solid #111111;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+@media screen and (max-width: 950px){
+  .input-func{
+    height: 50px;
+    width: 200px;
+  }
+  .form-control{
+    height: 50px;
+    width: 200px;
+
+  }
+  #btnCadastrar-func{
+    height: 50px;
+    width: 200px;
+    font-size: 17px;
+    padding: 0px;
+    
+  }
+  .cadastro-func{
+    font-size: 16px;
+  }
+  .cadastro-func2{
+   font-size: 16px;
+  }
+}
+@media screen and (max-width: 450px){
+  #login-func{
+    height: 70vh;
+    
+  }
+  .h1-login-func{
+    font-size: 1em;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+  .input-func{
+    height: 10px;
+    width: 100px;
+  }
+  .form-control{
+    height: 10px;
+    width: 100px;
+
+  }
+  #btnCadastrar-func{
+    height: 20px;
+    width: 100px;
+    font-size: 13px;
+    margin: 43px auto;
+    padding: 0px;
+  }
+  .cadastro-func{
+    font-size: 12px;
+  }
+  .cadastro-func2{
+   font-size: 12px;
+  }
+}
+@media screen and (max-width: 375px){
+  #login-func{
+    height: 70vh;
+    
+  }
+  .h1-login-func{
+    font-size: 1em;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+  .input-func{
+    height: 10px;
+    width: 100px;
+  }
+  .form-control{
+    height: 10px;
+    width: 100px;
+
+  }
+  #btnCadastrar-func{
+    height: 20px;
+    width: 100px;
+    font-size: 10px;
+    margin: 43px auto;
+    padding: 0px;
+    
+  }
+  .cadastro-func{
+    font-size: 10px;
+  }
+  .cadastro-func2{
+   font-size: 10px;
+  }
+}
+/*cadastro funcionarios*/
